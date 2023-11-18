@@ -1,6 +1,6 @@
 import { UserButton, auth } from '@clerk/nextjs';
 import React from 'react';
-import MainNav from './MainNav';
+import { MainNav } from './MainNav';
 import StoreSwitcher from './StoreSwitcher';
 import { redirect } from 'next/navigation';
 import { prismadb } from '@/lib/prismadb';

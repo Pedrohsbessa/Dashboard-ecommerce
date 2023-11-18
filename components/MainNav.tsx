@@ -4,7 +4,7 @@ import { cn } from '@/lib/utils';
 import Link from 'next/link';
 import { useParams, usePathname } from 'next/navigation';
 
-export default function MainNav({
+export function MainNav({
    className,
    ...props
 }: React.HTMLAttributes<HTMLElement>) {
@@ -12,7 +12,7 @@ export default function MainNav({
    const params = useParams();
    const routes = [
       {
-         href: `/${params.storeid}/settings`,
+         href: `/${params.storeId}/settings`,
          label: 'Configuações',
          active: pathName === `/${params.storeid}/settings`,
       },
